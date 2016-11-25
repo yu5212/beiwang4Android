@@ -72,13 +72,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
-                android:textStyle="bold"
                 android:layout_weight="2.22"
-                tools:text="登录"
                 tools:background="@android:color/holo_green_dark"
-                android:foreground="@android:color/background_light"
-                tools:foreground="@android:drawable/bottom_bar" />
+                android:visibility="visible"
+                android:text="login"
+                android:forceHasOverlappingRendering="true"
+                android:textAllCaps="false"
+                android:elevation="30dp"
+                android:fontFeatureSettings="@string/action_sign_in_short"
+                tools:textColor="#ffffff"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/email_sign_up_button"
@@ -86,11 +89,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
-                android:layout_weight="2.22"
-                tools:text="注册"
+                android:layout_weight="2.39"
                 tools:background="#666666"
-                tools:style="@style/Widget.AppCompat.Button.Colored" />
+                tools:style="@style/Widget.AppCompat.Button.Colored"
+                android:visibility="visible"
+                android:text="zhuce"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </ScrollView>
