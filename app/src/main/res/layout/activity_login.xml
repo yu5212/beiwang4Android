@@ -75,13 +75,13 @@
                 android:layout_weight="2.22"
                 tools:background="@android:color/holo_green_dark"
                 android:visibility="visible"
-                android:text="login"
                 android:forceHasOverlappingRendering="true"
                 android:textAllCaps="false"
                 android:elevation="30dp"
                 android:fontFeatureSettings="@string/action_sign_in_short"
                 tools:textColor="#ffffff"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                tools:text="登录" />
 
             <Button
                 android:id="@+id/email_sign_up_button"
@@ -93,8 +93,9 @@
                 tools:background="#666666"
                 tools:style="@style/Widget.AppCompat.Button.Colored"
                 android:visibility="visible"
-                android:text="zhuce"
-                android:textSize="24sp" />
+                android:text="注册"
+                android:textSize="24sp"
+                android:elevation="0dp" />
 
         </LinearLayout>
     </ScrollView>
