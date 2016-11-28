@@ -97,9 +97,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View v) {
                 //注册
-                RegActivity reg=new RegActivity();
-
-                startActivity(reg.getIntent());
+                View view=getLayoutInflater().inflate(R.layout.activity_reg,null);
+                setContentView(view);
             }
         });
 
