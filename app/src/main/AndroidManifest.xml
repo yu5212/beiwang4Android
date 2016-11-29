@@ -14,15 +14,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.AppBarOverlay"
-            >
-        </activity>
-        <activity android:name=".main" android:theme="@style/AppTheme.NoActionBar" >
+            android:name=".main"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,8 +26,31 @@
         </activity>
         <activity
             android:name=".RegActivity"
-            android:label="@string/title_activity_reg"
-            android:theme="@style/AppTheme.AppBarOverlay" />
+            android:label="@string/app_name"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme.WithActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.LoginActivity" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="online.beiwang.beiwang4android.main" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".main"
+            android:theme="@style/AppTheme.WithActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="online.beiwang.beiwang4android.main" />
+        </activity>
+        <activity android:name=".ListActivity" android:theme="@style/AppTheme.WithActionBar"></activity>
     </application>
 
 </manifest>

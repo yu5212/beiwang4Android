@@ -1,9 +1,14 @@
 package online.beiwang.beiwang4android;
 
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 
 public class main extends AppCompatActivity {
 
@@ -12,23 +17,26 @@ public class main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if(toolbar != null) {
+            setSupportActionBar(toolbar);
+            getSupportActionBar().setTitle("My custom toolbar!");
+            getSupportActionBar().setHomeButtonEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         View view=findViewById(R.id.activity_main);
-
-
-
-        view.setOnTouchListener(new View.OnTouchListener() {
-
+        view.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view,MotionEvent event) {
-
-                //检查登录状态，如果已登录，则跳转到列表页
-
-
-
-                View login=getLayoutInflater().inflate(R.layout.activity_login,null);
-                setContentView(login);
-                return true;
+            public void onClick(View v) {
+                _gotoLogin();
             }
         });
+    }
+
+    void _gotoLogin(){
+        Intent intent=new Intent(this,LoginActivity.class);
+
+        startActivity(intent);
     }
 }

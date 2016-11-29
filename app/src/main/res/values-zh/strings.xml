@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">备忘online</string>
     <string name="action_sign_in_short">注册</string>
+    <string name="reg_title">注册新用户</string>
 </resources>
