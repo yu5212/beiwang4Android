@@ -2,24 +2,8 @@
     <string name="app_name">备忘online</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="action_sign_in_short">注册</string>
-    <string name="title_activity_reg">RegActivity</string>
-    <string name="back">返回</string>
-    <string name="reg">注册</string>
-    <string name="ok">确定</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="reg_title">注册新用户</string>
+    <string name="app_login_title">用户登录</string>
+    <string name="app_reg_title">新用户注册</string>
 </resources>

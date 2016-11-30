@@ -8,15 +8,8 @@
     android:fitsSystemWindows="false"
     app:layout_collapseParallaxMultiplier="1.0">
 
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#d2be6d"
-        android:theme="?attr/actionBarTheme"
-        android:minHeight="?attr/actionBarSize"
-        android:id="@+id/toolbar3" />
-
-    <include layout="@layout/content_login"
+    <include
+        layout="@layout/content_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
