@@ -16,11 +16,17 @@ public class UserManager implements UserManagerInterface {
     @Override
     public String Reg(String email, String password) {
         String msg="";
-        JedisPool pool = new JedisPool(new JedisPoolConfig(), "192.168.1.22");
-        try (Jedis jedis = pool.getResource()) {
-            jedis.lpush(email,password);
+        try {
+            JedisPool pool = new JedisPool(new JedisPoolConfig(), "localhost");
+            try (Jedis jedis = pool.getResource()) {
+                jedis.lpush(email, password);
+            }
+            pool.destroy();
         }
-        pool.destroy();
+        catch (Exception e)
+        {
+
+        }
         return  msg;
     }
 
