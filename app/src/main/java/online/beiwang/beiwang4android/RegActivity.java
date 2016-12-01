@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import online.beiwang.userManager.UserManager;
+
 public class RegActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -52,6 +54,10 @@ public class RegActivity extends AppCompatActivity implements View.OnClickListen
             t_copsw.setText("");
             return;
         }
+
+        //新用户注册
+        UserManager manager=new UserManager();
+        manager.Reg(email,password);
 
 
 
