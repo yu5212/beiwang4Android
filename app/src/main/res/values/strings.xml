@@ -6,4 +6,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="app_login_title">用户登录</string>
     <string name="app_reg_title">新用户注册</string>
+    <string name="main_welcome">开卷有益|学而不思则罔，思而不学则殆|宜将剩勇追穷寇，不可沽名学霸王</string>
 </resources>

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +23,14 @@ public class RegActivity extends AppCompatActivity implements View.OnClickListen
 
         Button reg = (Button) findViewById(R.id.btn_sign_in);
         reg.setOnClickListener(this);
+
+
+    }
+
+    @Override
+    public boolean  onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.reg_menu, menu);
+        return true;
     }
 
     @Override
